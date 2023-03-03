@@ -57,7 +57,8 @@ public void displayWinningMessage()
 }
 public boolean isValid(int r, int c)
 {
-    //your code here
+    if(r >= 0 && r < 20 && c >= 0 && c < 20) return true;
+    else
     return false;
 }
 public int countMines(int row, int col)
