@@ -29,7 +29,7 @@ public void setMines()
   while(mines.size() < numMines){
     int rows = (int)(Math.random()*20);
     int cols = (int)(Math.random()*20);
-    if(mines.contains(rows, cols)){
+    if(!mines.contains(rows, cols)){
     mines.add(buttons[rows][cols]);
     System.out.println(rows + "," + cols);
     }
