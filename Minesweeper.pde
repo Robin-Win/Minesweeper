@@ -60,11 +60,6 @@ public boolean isWon()
 public void displayLosingMessage()
 {
   if(win == false) {
-    for(int i = 0; i < NUM_ROWS; i++){
-      for(int j = 0; j < NUM_COLS; j++){
-        buttons[i][j] = new MSButton(i, j);
-      }
-    }
     buttons[0][0].setLabel("Y");
     buttons[0][1].setLabel("O");
     buttons[0][2].setLabel("U");
